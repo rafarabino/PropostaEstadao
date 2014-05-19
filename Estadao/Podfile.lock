@@ -1,10 +1,13 @@
 PODS:
+  - GPUImage (0.1.4)
   - MDCSwipeToChoose (0.2.1)
 
 DEPENDENCIES:
+  - GPUImage (~> 0.1)
   - MDCSwipeToChoose (~> 0.2)
 
 SPEC CHECKSUMS:
+  GPUImage: f9b32e12350792a630e596ffc7b050bea3662670
   MDCSwipeToChoose: a12f0e87c95f635d52777afd42bfd9a40e0e4626
 
 COCOAPODS: 0.32.1

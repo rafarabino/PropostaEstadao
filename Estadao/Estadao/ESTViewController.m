@@ -7,9 +7,13 @@
 //
 
 #import "ESTViewController.h"
+#import "AMSmoothAlertView.h"
+#import <MDCSwipeToChoose/MDCSwipeToChoose.h>
 
-@interface ESTViewController ()
-
+@interface ESTViewController () <MDCSwipeToChooseDelegate>
+{
+    BOOL firstDidAppear;
+}
 @end
 
 @implementation ESTViewController
@@ -18,12 +22,57 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    firstDidAppear = YES;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    
+    if (firstDidAppear) {
+        AMSmoothAlertView *alert = [[AMSmoothAlertView alloc] initDropAlertWithTitle:@"Bem-vindo!" andText:@"Ao novo Estadão! Vamos escolher o portal de notícias que é a sua cara?" andCancelButton:YES forAlertType:AlertInfo];
+        [alert setCompletionBlock:^(AMSmoothAlertView *alertView, UIButton *button){
+            if ([[button titleForState:UIControlStateNormal] isEqualToString:@"Começar"]) {
+                [self startMan];
+            }
+        }];
+        
+        [alert show];
+        firstDidAppear = NO;
+    }
+
 }
+
+- (void)startMan
+{
+    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
+    options.likedText = @"Sim";
+    options.likedColor = [UIColor blueColor];
+    options.nopeColor = [UIColor redColor];
+    options.nopeText = @"Não";
+    options.delegate = self;
+    
+    NSArray *cartões = @[@"CartaoEsportes", @"CartaoInternacional", @"CartaoPolitica"];
+    
+    for (int i = 0; i < [cartões count]; i++) {
+        NSString *nome = cartões[i];
+        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:CGRectMake(210, 200, 350, 200)
+                                                                         options:options];
+        view.imageView.image = [UIImage imageNamed:nome];
+        view.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        view.tag = i;
+        
+        [self.view addSubview:view];
+    }
+}
+
+// This is called then a user swipes the view fully left or right.
+- (void)view:(UIView *)view wasChosenWithDirection:(MDCSwipeDirection)direction {
+    if (view.tag == 0) {
+        NSLog(@"Finished");
+    }
+}
+
 
 @end
