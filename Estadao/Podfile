@@ -1,0 +1,12 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "7.0"
+
+target "Estadao" do
+
+pod 'MDCSwipeToChoose', '~> 0.2'
+
+end
+
+target "EstadaoTests" do
+
+end
