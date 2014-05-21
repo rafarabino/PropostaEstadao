@@ -8,9 +8,9 @@
 
 #import "ESTViewController.h"
 #import "AMSmoothAlertView.h"
-#import <MDCSwipeToChoose/MDCSwipeToChoose.h>
+#import "ESTChooseSectionsViewController.h"
 
-@interface ESTViewController () <MDCSwipeToChooseDelegate>
+@interface ESTViewController ()
 {
     BOOL firstDidAppear;
 }
@@ -30,49 +30,21 @@
 {
     [super viewDidAppear:animated];
     
-    if (firstDidAppear) {
-        AMSmoothAlertView *alert = [[AMSmoothAlertView alloc] initDropAlertWithTitle:@"Bem-vindo!" andText:@"Ao novo Estadão! Vamos escolher o portal de notícias que é a sua cara?" andCancelButton:YES forAlertType:AlertInfo];
-        [alert setCompletionBlock:^(AMSmoothAlertView *alertView, UIButton *button){
-            if ([[button titleForState:UIControlStateNormal] isEqualToString:@"Começar"]) {
-                [self startMan];
-            }
-        }];
-        
+    AMSmoothAlertView *alert = [[AMSmoothAlertView alloc] initDropAlertWithTitle:@"Mudamos!" andText:@"Vamos escolher o portal de notícias que é a sua cara?" andCancelButton:YES forAlertType:AlertInfo];
+    [alert setCompletionBlock:^(AMSmoothAlertView *alertView, UIButton *button){
+        if ([[button titleForState:UIControlStateNormal] isEqualToString:@"Começar"]) {
+            [self startMan];
+        }
+    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [alert show];
-        firstDidAppear = NO;
-    }
-
+    });
 }
 
 - (void)startMan
 {
-    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
-    options.likedText = @"Sim";
-    options.likedColor = [UIColor blueColor];
-    options.nopeColor = [UIColor redColor];
-    options.nopeText = @"Não";
-    options.delegate = self;
-    
-    NSArray *cartões = @[@"CartaoEsportes", @"CartaoInternacional", @"CartaoPolitica"];
-    
-    for (int i = 0; i < [cartões count]; i++) {
-        NSString *nome = cartões[i];
-        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:CGRectMake(210, 200, 350, 200)
-                                                                         options:options];
-        view.imageView.image = [UIImage imageNamed:nome];
-        view.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        view.tag = i;
-        
-        [self.view addSubview:view];
-    }
+    [self performSegueWithIdentifier:@"ChooseSections" sender:nil];
 }
-
-// This is called then a user swipes the view fully left or right.
-- (void)view:(UIView *)view wasChosenWithDirection:(MDCSwipeDirection)direction {
-    if (view.tag == 0) {
-        NSLog(@"Finished");
-    }
-}
-
 
 @end
