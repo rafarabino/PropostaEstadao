@@ -17,7 +17,6 @@
 		4C0B6EC8192D2C1D00AE07F3 /* estadao_desktop_fluxo-de-telas_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6EC7192D2C1D00AE07F3 /* estadao_desktop_fluxo-de-telas_1.jpg */; };
 		4C0B6ECA192D2D0200AE07F3 /* estadao_desktop_fluxo-de-telas_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6EC9192D2D0200AE07F3 /* estadao_desktop_fluxo-de-telas_2.jpg */; };
 		4C0B6ECC192D3FC600AE07F3 /* estadao_desktop_fluxo-de-telas_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6ECB192D3FC600AE07F3 /* estadao_desktop_fluxo-de-telas_5.jpg */; };
-		4C0B6ECE192D420A00AE07F3 /* estadao_desktop_fluxo-de-telas_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6ECD192D420A00AE07F3 /* estadao_desktop_fluxo-de-telas_6.jpg */; };
 		4C0B6ED1192D53D100AE07F3 /* ESTContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B6ED0192D53D100AE07F3 /* ESTContentViewController.m */; };
 		4C0B6ED4192D546A00AE07F3 /* ESTResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B6ED3192D546A00AE07F3 /* ESTResumeViewController.m */; };
 		4C0B6ED9192D557200AE07F3 /* EsporteArrastar1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6ED5192D557200AE07F3 /* EsporteArrastar1.jpg */; };
@@ -25,6 +24,8 @@
 		4C0B6EDB192D557200AE07F3 /* PoliticaArrastar1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6ED7192D557200AE07F3 /* PoliticaArrastar1.jpg */; };
 		4C0B6EDC192D557200AE07F3 /* PoliticaArrastar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6ED8192D557200AE07F3 /* PoliticaArrastar2.jpg */; };
 		4C0B6EDF192D5A5900AE07F3 /* ESTSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B6EDE192D5A5900AE07F3 /* ESTSwipeToChooseView.m */; };
+		4C0B6EE2192D5B6E00AE07F3 /* estadao_desktop_fluxo-de-telas_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6EE0192D5B6E00AE07F3 /* estadao_desktop_fluxo-de-telas_8.jpg */; };
+		4C0B6EE5192D5CB700AE07F3 /* NoticiaCheia.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6EE4192D5CB700AE07F3 /* NoticiaCheia.png */; };
 		4C67146D192A9B2C00CD22EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C67146C192A9B2C00CD22EB /* Foundation.framework */; };
 		4C67146F192A9B2C00CD22EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C67146E192A9B2C00CD22EB /* CoreGraphics.framework */; };
 		4C671471192A9B2C00CD22EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C671470192A9B2C00CD22EB /* UIKit.framework */; };
@@ -65,7 +66,6 @@
 		4C0B6EC7192D2C1D00AE07F3 /* estadao_desktop_fluxo-de-telas_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "estadao_desktop_fluxo-de-telas_1.jpg"; sourceTree = "<group>"; };
 		4C0B6EC9192D2D0200AE07F3 /* estadao_desktop_fluxo-de-telas_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "estadao_desktop_fluxo-de-telas_2.jpg"; sourceTree = "<group>"; };
 		4C0B6ECB192D3FC600AE07F3 /* estadao_desktop_fluxo-de-telas_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "estadao_desktop_fluxo-de-telas_5.jpg"; sourceTree = "<group>"; };
-		4C0B6ECD192D420A00AE07F3 /* estadao_desktop_fluxo-de-telas_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "estadao_desktop_fluxo-de-telas_6.jpg"; sourceTree = "<group>"; };
 		4C0B6ECF192D53D100AE07F3 /* ESTContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTContentViewController.h; sourceTree = "<group>"; };
 		4C0B6ED0192D53D100AE07F3 /* ESTContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTContentViewController.m; sourceTree = "<group>"; };
 		4C0B6ED2192D546A00AE07F3 /* ESTResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTResumeViewController.h; sourceTree = "<group>"; };
@@ -76,6 +76,8 @@
 		4C0B6ED8192D557200AE07F3 /* PoliticaArrastar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PoliticaArrastar2.jpg; sourceTree = "<group>"; };
 		4C0B6EDD192D5A5900AE07F3 /* ESTSwipeToChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTSwipeToChooseView.h; sourceTree = "<group>"; };
 		4C0B6EDE192D5A5900AE07F3 /* ESTSwipeToChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESTSwipeToChooseView.m; sourceTree = "<group>"; };
+		4C0B6EE0192D5B6E00AE07F3 /* estadao_desktop_fluxo-de-telas_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "estadao_desktop_fluxo-de-telas_8.jpg"; sourceTree = "<group>"; };
+		4C0B6EE4192D5CB700AE07F3 /* NoticiaCheia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoticiaCheia.png; sourceTree = "<group>"; };
 		4C671469192A9B2C00CD22EB /* Estadao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Estadao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C67146C192A9B2C00CD22EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C67146E192A9B2C00CD22EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,7 +174,8 @@
 				4C0B6EC9192D2D0200AE07F3 /* estadao_desktop_fluxo-de-telas_2.jpg */,
 				4C0B6EC7192D2C1D00AE07F3 /* estadao_desktop_fluxo-de-telas_1.jpg */,
 				4C0B6ECB192D3FC600AE07F3 /* estadao_desktop_fluxo-de-telas_5.jpg */,
-				4C0B6ECD192D420A00AE07F3 /* estadao_desktop_fluxo-de-telas_6.jpg */,
+				4C0B6EE0192D5B6E00AE07F3 /* estadao_desktop_fluxo-de-telas_8.jpg */,
+				4C0B6EE4192D5CB700AE07F3 /* NoticiaCheia.png */,
 				4C0B6ED5192D557200AE07F3 /* EsporteArrastar1.jpg */,
 				4C0B6ED6192D557200AE07F3 /* EsporteArrastar2.jpg */,
 				4C0B6ED7192D557200AE07F3 /* PoliticaArrastar1.jpg */,
@@ -311,9 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0B6EC0192AA8C000AE07F3 /* CartaoEsportes.png in Resources */,
-				4C0B6ECE192D420A00AE07F3 /* estadao_desktop_fluxo-de-telas_6.jpg in Resources */,
 				4C0B6EC8192D2C1D00AE07F3 /* estadao_desktop_fluxo-de-telas_1.jpg in Resources */,
 				4C0B6EDB192D557200AE07F3 /* PoliticaArrastar1.jpg in Resources */,
+				4C0B6EE5192D5CB700AE07F3 /* NoticiaCheia.png in Resources */,
 				4C0B6ECC192D3FC600AE07F3 /* estadao_desktop_fluxo-de-telas_5.jpg in Resources */,
 				4C671485192A9B2C00CD22EB /* Images.xcassets in Resources */,
 				4C671477192A9B2C00CD22EB /* InfoPlist.strings in Resources */,
@@ -321,6 +324,7 @@
 				4C0B6EC2192AA8C000AE07F3 /* CartaoPolitica.png in Resources */,
 				4C0B6ED9192D557200AE07F3 /* EsporteArrastar1.jpg in Resources */,
 				4C0B6EC1192AA8C000AE07F3 /* CartaoInternacional.png in Resources */,
+				4C0B6EE2192D5B6E00AE07F3 /* estadao_desktop_fluxo-de-telas_8.jpg in Resources */,
 				4C0B6ECA192D2D0200AE07F3 /* estadao_desktop_fluxo-de-telas_2.jpg in Resources */,
 				4C0B6EDA192D557200AE07F3 /* EsporteArrastar2.jpg in Resources */,
 				4C0B6EDC192D557200AE07F3 /* PoliticaArrastar2.jpg in Resources */,
@@ -514,6 +518,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Estadao/Estadao-Prefix.pch";
 				INFOPLIST_FILE = "Estadao/Estadao-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -528,6 +533,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Estadao/Estadao-Prefix.pch";
 				INFOPLIST_FILE = "Estadao/Estadao-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -154,7 +154,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="estadao_desktop_fluxo-de-telas_6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kiD-NJ-91k">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="estadao_desktop_fluxo-de-telas_8.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kiD-NJ-91k">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -178,6 +178,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfW-5F-GI1">
+                                <rect key="frame" x="579" y="119" width="185" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="expandNews:" destination="3mN-1X-zOT" eventType="touchUpInside" id="04y-N2-gYX"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="NoticiaCheia.png" translatesAutoresizingMaskIntoConstraints="NO" id="eiu-v8-pgy">
+                                <rect key="frame" x="0.0" y="119" width="768" height="1015"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -185,6 +199,7 @@
                     <connections>
                         <outlet property="esporte1View" destination="laP-04-wj4" id="Qcu-8E-fNE"/>
                         <outlet property="esporte2View" destination="D0a-SQ-FZY" id="Vu1-6l-W7q"/>
+                        <outlet property="fullScreenNews" destination="eiu-v8-pgy" id="JeA-td-2wz"/>
                         <outlet property="politica1View" destination="ISc-Z1-RRj" id="Xhy-p7-ToR"/>
                         <outlet property="politica2View" destination="KC4-M4-Hh9" id="buN-qf-RX2"/>
                     </connections>
@@ -195,10 +210,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NoticiaCheia.png" width="1440" height="1902"/>
         <image name="estadao_desktop_fluxo-de-telas_1.jpg" width="1440" height="2088"/>
         <image name="estadao_desktop_fluxo-de-telas_2.jpg" width="1440" height="2088"/>
         <image name="estadao_desktop_fluxo-de-telas_5.jpg" width="1440" height="2088"/>
-        <image name="estadao_desktop_fluxo-de-telas_6.jpg" width="1440" height="2088"/>
+        <image name="estadao_desktop_fluxo-de-telas_8.jpg" width="1440" height="2088"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

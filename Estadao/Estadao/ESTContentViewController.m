@@ -16,8 +16,13 @@
     IBOutlet UIView *esporte2View;
     IBOutlet UIView *politica1View;
     IBOutlet UIView *politica2View;
+    IBOutlet UIImageView *fullScreenNews;
     NSDictionary *dictionary;
+    CGRect buttonNewsFrame;
+    CGRect fullNewsFrame;
 }
+
+- (IBAction)expandNews:(id)sender;
 
 @end
 
@@ -36,6 +41,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    fullNewsFrame = fullScreenNews.frame;
+    fullScreenNews.hidden = YES;
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeNews)];
+    [fullScreenNews addGestureRecognizer:tapGestureRecognizer];
+    fullScreenNews.userInteractionEnabled = YES;
     
     MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
     options.likedText = nil;
@@ -111,6 +122,34 @@
     }
     
     return nil;
+}
+
+- (IBAction)expandNews:(id)sender
+{
+    UIButton *buttonSender = sender;
+    
+    buttonNewsFrame = buttonSender.frame;
+    
+    [self.view bringSubviewToFront:fullScreenNews];
+    
+    fullScreenNews.frame = buttonNewsFrame;
+    fullScreenNews.hidden = NO;
+    fullScreenNews.alpha = 0.5;
+    
+    [UIView animateWithDuration:0.45 animations:^{
+        fullScreenNews.alpha = 1;
+        fullScreenNews.frame = fullNewsFrame;
+    }];
+}
+
+- (void)closeNews
+{
+    [UIView animateWithDuration:0.45 animations:^{
+        fullScreenNews.alpha = 0.5;
+        fullScreenNews.frame = buttonNewsFrame;
+    } completion:^(BOOL finished) {
+        fullScreenNews.alpha = 0;
+    }];
 }
 
 @end

@@ -19,6 +19,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
     for (UIView *subview in [self.view subviews]) {
         if (subview.tag == 5) {
