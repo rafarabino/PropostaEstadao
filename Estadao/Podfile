@@ -4,7 +4,6 @@
 target "Estadao" do
 
 pod 'MDCSwipeToChoose', '~> 0.2'
-pod 'GPUImage', '~> 0.1'
 pod 'COSTouchVisualizer', '~> 1.0'
 
 end

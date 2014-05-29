@@ -1,13 +1,16 @@
 PODS:
+  - COSTouchVisualizer (1.0.2)
   - GPUImage (0.1.4)
   - MDCSwipeToChoose (0.2.1)
 
 DEPENDENCIES:
+  - COSTouchVisualizer (~> 1.0)
   - GPUImage (~> 0.1)
   - MDCSwipeToChoose (~> 0.2)
 
 SPEC CHECKSUMS:
-  GPUImage: f9b32e12350792a630e596ffc7b050bea3662670
-  MDCSwipeToChoose: a12f0e87c95f635d52777afd42bfd9a40e0e4626
+  COSTouchVisualizer: d49c18c76475fb517dc87e93a471f23a9206b956
+  GPUImage: ac2bde5f4dbea02a81ced6313964cec1f2043ca9
+  MDCSwipeToChoose: 54f7b1675eff182cdc46c582360c7fca4c766a67
 
 COCOAPODS: 0.32.1

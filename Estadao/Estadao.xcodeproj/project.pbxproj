@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		36BB8285CFC749DA99D4D47E /* libPods-Estadao.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F69A1DB8D3194CDF88461158 /* libPods-Estadao.a */; };
-		4C0B6EBB192AA53300AE07F3 /* AMBouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B6EB7192AA53300AE07F3 /* AMBouncingView.m */; };
-		4C0B6EBC192AA53300AE07F3 /* AMSmoothAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B6EBA192AA53300AE07F3 /* AMSmoothAlertView.m */; };
 		4C0B6EC0192AA8C000AE07F3 /* CartaoEsportes.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6EBD192AA8C000AE07F3 /* CartaoEsportes.png */; };
 		4C0B6EC1192AA8C000AE07F3 /* CartaoInternacional.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6EBE192AA8C000AE07F3 /* CartaoInternacional.png */; };
 		4C0B6EC2192AA8C000AE07F3 /* CartaoPolitica.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6EBF192AA8C000AE07F3 /* CartaoPolitica.png */; };
@@ -53,11 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C0B6EB6192AA53300AE07F3 /* AMBouncingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMBouncingView.h; path = "../../../../Users/natanrolnik/Downloads/AMSmoothAlert-master/AMSmoothAlert/AMBouncingView.h"; sourceTree = "<group>"; };
-		4C0B6EB7192AA53300AE07F3 /* AMBouncingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMBouncingView.m; path = "../../../../Users/natanrolnik/Downloads/AMSmoothAlert-master/AMSmoothAlert/AMBouncingView.m"; sourceTree = "<group>"; };
-		4C0B6EB8192AA53300AE07F3 /* AMSmoothAlertConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSmoothAlertConstants.h; path = "../../../../Users/natanrolnik/Downloads/AMSmoothAlert-master/AMSmoothAlert/AMSmoothAlertConstants.h"; sourceTree = "<group>"; };
-		4C0B6EB9192AA53300AE07F3 /* AMSmoothAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSmoothAlertView.h; path = "../../../../Users/natanrolnik/Downloads/AMSmoothAlert-master/AMSmoothAlert/AMSmoothAlertView.h"; sourceTree = "<group>"; };
-		4C0B6EBA192AA53300AE07F3 /* AMSmoothAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSmoothAlertView.m; path = "../../../../Users/natanrolnik/Downloads/AMSmoothAlert-master/AMSmoothAlert/AMSmoothAlertView.m"; sourceTree = "<group>"; };
 		4C0B6EBD192AA8C000AE07F3 /* CartaoEsportes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartaoEsportes.png; sourceTree = "<group>"; };
 		4C0B6EBE192AA8C000AE07F3 /* CartaoInternacional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartaoInternacional.png; sourceTree = "<group>"; };
 		4C0B6EBF192AA8C000AE07F3 /* CartaoPolitica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CartaoPolitica.png; sourceTree = "<group>"; };
@@ -181,11 +174,6 @@
 				4C0B6ED7192D557200AE07F3 /* PoliticaArrastar1.jpg */,
 				4C0B6ED8192D557200AE07F3 /* PoliticaArrastar2.jpg */,
 				4C0B6EC3192AA8C700AE07F3 /* Cartoes */,
-				4C0B6EB6192AA53300AE07F3 /* AMBouncingView.h */,
-				4C0B6EB7192AA53300AE07F3 /* AMBouncingView.m */,
-				4C0B6EB8192AA53300AE07F3 /* AMSmoothAlertConstants.h */,
-				4C0B6EB9192AA53300AE07F3 /* AMSmoothAlertView.h */,
-				4C0B6EBA192AA53300AE07F3 /* AMSmoothAlertView.m */,
 				4C67147B192A9B2C00CD22EB /* ESTAppDelegate.h */,
 				4C67147C192A9B2C00CD22EB /* ESTAppDelegate.m */,
 				4C67147E192A9B2C00CD22EB /* Main.storyboard */,
@@ -383,9 +371,7 @@
 				4C0B6EC6192D2AE300AE07F3 /* ESTChooseSectionsViewController.m in Sources */,
 				4C0B6EDF192D5A5900AE07F3 /* ESTSwipeToChooseView.m in Sources */,
 				4C671479192A9B2C00CD22EB /* main.m in Sources */,
-				4C0B6EBB192AA53300AE07F3 /* AMBouncingView.m in Sources */,
 				4C671483192A9B2C00CD22EB /* ESTViewController.m in Sources */,
-				4C0B6EBC192AA53300AE07F3 /* AMSmoothAlertView.m in Sources */,
 				4C67147D192A9B2C00CD22EB /* ESTAppDelegate.m in Sources */,
 				4C0B6ED1192D53D100AE07F3 /* ESTContentViewController.m in Sources */,
 			);
@@ -530,6 +516,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Estadao/Estadao-Prefix.pch";
 				INFOPLIST_FILE = "Estadao/Estadao-Info.plist";
